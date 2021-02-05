@@ -1,7 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-
+   mode:'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'first-blog',
@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  components: true,
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'vuesax/dist/vuesax.css'
@@ -36,8 +36,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['@nuxt/content'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
